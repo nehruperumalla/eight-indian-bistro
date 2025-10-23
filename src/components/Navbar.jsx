@@ -55,6 +55,7 @@ export default function Navbar() {
             >
               Menu
             </a>
+            
             <Link
               key="gallery"
               to="gallery"
