@@ -125,7 +125,7 @@ export default function Menu() {
         <h2 className="text-4xl md:text-5xl font-bold text-turmeric mb-3">
           Our Menu
         </h2>
-        <p className="text-gray-300 font-secondary text-lg">
+        <p className="text-gray-300 text-lg">
           Experience authentic South Indian flavors crafted with passion and precision.
         </p>
       </motion.div>
@@ -150,7 +150,7 @@ export default function Menu() {
               <h3 className="text-turmeric text-2xl font-semibold mb-1">
                 {dish.name}
               </h3>
-              <p className="text-gray-200 text-sm font-secondary">
+              <p className="text-gray-200 text-sm">
                 {dish.desc}
               </p>
             </div>

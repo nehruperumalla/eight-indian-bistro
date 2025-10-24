@@ -44,14 +44,14 @@ export default function Navbar() {
               to="about"
               smooth={true}
               duration={600}
-              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary tracking-wide"
+              className="cursor-pointer text-turmeric text-gray-200 hover:text-turmeric transition-colors tracking-wide"
             >
               About
             </Link>
             <a
               href="/pdfs/EightIndianBistro_FullMenu.pdf"
               target="_blank"
-              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary tracking-wide"
+              className="cursor-pointer text-turmeric text-gray-200 hover:text-turmeric transition-colors tracking-wide"
             >
               Menu
             </a>
@@ -61,7 +61,7 @@ export default function Navbar() {
               to="gallery"
               smooth={true}
               duration={600}
-              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary tracking-wide"
+              className="cursor-pointer text-turmeric text-gray-200 hover:text-turmeric transition-colors tracking-wide"
             >
               Gallery
             </Link>
@@ -69,7 +69,7 @@ export default function Navbar() {
               href="https://order.toasttab.com/online/eightindianbistro"
               rel="noopener noreferrer"
               target="_blank"
-              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary tracking-wide"
+              className="cursor-pointer text-turmeric text-gray-200 hover:text-turmeric transition-colors tracking-wide"
             >
               Order Now
             </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
               to="contact"
               smooth={true}
               duration={600}
-              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary tracking-wide"
+              className="cursor-pointer text-turmeric text-gray-200 hover:text-turmeric transition-colors tracking-wide"
             >
               Contact
             </Link>
@@ -126,7 +126,7 @@ export default function Navbar() {
               to="about"
               smooth={true}
               duration={600}
-              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary"
+              className="cursor-pointer text-turmeric hover:text-turmeric transition-colors"
 
             >
               About
@@ -134,7 +134,7 @@ export default function Navbar() {
             <a
               href="/pdfs/EightIndianBistro_FullMenu.pdf"
               target="_blank"
-              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary"
+              className="cursor-pointer text-turmeric hover:text-turmeric transition-colors"
 
             >
               Menu
@@ -145,7 +145,7 @@ export default function Navbar() {
               to="gallery"
               smooth={true}
               duration={600}
-              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary"
+              className="cursor-pointer text-turmeric hover:text-turmeric transition-colors"
             >
               Gallery
             </Link>
@@ -153,7 +153,7 @@ export default function Navbar() {
               href="https://order.toasttab.com/online/eightindianbistro"
               rel="noopener noreferrer"
               target="_blank"
-              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary"
+              className="cursor-pointer text-turmeric hover:text-turmeric transition-colors"
             >
               Order Now
             </a>
@@ -162,7 +162,7 @@ export default function Navbar() {
               to="contact"
               smooth={true}
               duration={600}
-              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary"
+              className="cursor-pointer text-turmeric hover:text-turmeric transition-colors"
             >
               Contact
             </Link>

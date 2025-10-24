@@ -29,10 +29,10 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        <h1 className="font-primary text-5xl md:text-7xl font-bold text-turmeric drop-shadow-lg">
+        <h1 className="font-primary text-4xl sm:text-4xl md:text-6xl font-bold text-turmeric drop-shadow-lg">
           Eight Indian Bistro
         </h1>
-        <p className="mt-4 text-lg md:text-2xl text-gray-200 font-secondary">
+        <p className="mt-4 text-sm md:text-2xl text-gray-200">
           Sophisticated Flavors, Soulful Aromas and Infinite Tastes
         </p>
 
@@ -88,7 +88,7 @@ export default function Hero() {
       className="flex flex-col items-center justify-center bg-black/60 rounded-xl py-4 shadow-md border border-gray-700 hover:border-turmeric transition-all"
     >
       <div className="mb-2 text-xl text-turmeric">{item.icon}</div>
-      <span className="text-sm md:text-base font-medium tracking-wide font-secondary">
+      <span className="text-sm md:text-base font-medium tracking-wide">
         {item.label}
       </span>
     </motion.a>

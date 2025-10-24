@@ -18,9 +18,8 @@ export default function Contact() {
         <h2 className="text-4xl md:text-5xl font-bold text-turmeric mb-3">
           Visit Us
         </h2>
-        <p className="text-gray-400 font-secondary text-lg">
-          We’d love to welcome you for an authentic South Indian experience.
-        </p>
+        <p className="text-gray-400 text-sm md:text-2xl">
+          The Warmth of Indian flavors and the charm of modern dining. </p>
       </motion.div>
 
       {/* Contact + Map */}
@@ -52,7 +51,7 @@ export default function Contact() {
           </div>
 
           <div className="mt-6">
-            <p className="text-gray-400 text-md font-secondary mb-2">
+            <p className="text-gray-400 text-md mb-2">
               <span className="text-turmeric font-semibold">Hours:</span>
             </p>
               <div className="divide-y divide-white/10 border-t border-b border-white/10 max-w-sm md:max-w-md">
@@ -66,7 +65,7 @@ export default function Contact() {
                   ["Sunday", "11:30 AM - 3:00 PM and 5:30 PM - 10:00 PM"]
                 ].map(([day, time], i) => (
                   <div key={i}
-                        className="flex justify-between py-2 text-sm font-secondary">
+                        className="flex justify-between py-2 text-sm">
                           <span className="text-gray-300">{day}</span>
                           <span className="text-gray-100">{time}</span>
 

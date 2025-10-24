@@ -27,7 +27,7 @@ export default function Gallery() {
         transition={{ duration: 0.8 }}
       >
         <h2 className="text-4xl md:text-5xl font-bold text-turmeric mb-3">Gallery</h2>
-        <p className="text-gray-300 font-secondary text-lg">
+        <p className="text-gray-300 text-sm md:text-2xl">
           A glimpse into the vibrant colors, textures, and smiles at Eight Indian Bistro.
         </p>
       </motion.div>
