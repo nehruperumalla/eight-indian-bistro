@@ -96,7 +96,7 @@ export default function Navbar() {
       {/* Mobile Dropdown */}
       {menuOpen && (
         <div className="md:hidden bg-black/90 flex flex-col items-center space-y-3 pb-4">
-          {navItems.map((item) => (
+          {/* {navItems.map((item) => (
             <Link
               key={item.id}
               to={item.id}
@@ -107,7 +107,65 @@ export default function Navbar() {
             >
               {item.label}
             </Link>
-          ))}
+          ))} */}
+          {/* <Link
+            key={item.id}
+            to={item.id}
+            smooth={true}
+            duration={600}
+            className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary"
+            onClick={() => setMenuOpen(false)}
+          >
+            {item.label}
+          </Link> */}
+
+
+
+          <Link
+              key="about"
+              to="about"
+              smooth={true}
+              duration={600}
+              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary"
+
+            >
+              About
+            </Link>
+            <a
+              href="/pdfs/EightIndianBistro_FullMenu.pdf"
+              target="_blank"
+              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary"
+
+            >
+              Menu
+            </a>
+            
+            <Link
+              key="gallery"
+              to="gallery"
+              smooth={true}
+              duration={600}
+              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary"
+            >
+              Gallery
+            </Link>
+            <a
+              href="https://order.toasttab.com/online/eightindianbistro"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary"
+            >
+              Order Now
+            </a>
+            <Link
+              key="contact"
+              to="contact"
+              smooth={true}
+              duration={600}
+              className="cursor-pointer text-gray-200 hover:text-turmeric transition-colors font-secondary"
+            >
+              Contact
+            </Link>
         </div>
       )}
     </nav>
