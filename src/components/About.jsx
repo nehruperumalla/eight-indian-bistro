@@ -49,7 +49,7 @@ export default function About() {
           </h2>
 
           <p className="text-gray-200 text-2xl leading-relaxed mb-6 font-secondary">
-            At <span className="text-turmeric">Eight Indian Bistro</span>, every
+            At <span className="text-turmeric font-bold">Eight Indian Bistro</span>, every
             meal is a journey — a blend of traditional recipes, bold spices, and
             modern presentation. Our story began with the vision to bring South
             Indian comfort food to a refined, contemporary setting.

@@ -21,7 +21,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-black/90 via-[#1A1A1A]/80 to-black/90 backdrop-blur-md shadow-md">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#5F4A2F] backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         <img src="/Eight-logo-off-white.png" alt="Eight Indian Bistro" className="h-10" style={{cursor: "pointer"}} onClick={goHome} />
 

@@ -8,11 +8,11 @@ export default {
     extend: {
       colors: {
         dark: "#000000",
-        turmeric: "#FFB306",
+        turmeric: "#FEEDC8",
         chilli: "#EF0440",
       },
       fontFamily: {
-        primary: ["Agatho", "sans-serif"],
+        primary: ["Poppins", "sans-serif"],
         secondary: ["Nexa", "sans-serif"],
       },
     },

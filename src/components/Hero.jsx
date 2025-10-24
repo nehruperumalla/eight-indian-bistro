@@ -59,7 +59,7 @@ export default function Hero() {
     {
       label: "Order Online",
       icon: <CreditCard size={26} />,
-      color: "#EF0440", // chilli
+      color: "#FEEDC8", // chilli
       link: "https://order.toasttab.com/online/eightindianbistro", // your ordering link
     },
     // {
@@ -70,7 +70,7 @@ export default function Hero() {
     {
       label: "BYOB Friendly",
       icon: <BottleWine size={26} />,
-      color: "#EF0440",
+      color: "#FEEDC8",
     },
   ].map((item, i) => (
     <motion.a

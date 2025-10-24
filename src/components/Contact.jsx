@@ -38,15 +38,15 @@ export default function Contact() {
 
           <div className="space-y-3 text-lg">
             <p className="flex items-center gap-3">
-              <MapPin className="text-chilli" size={20} />
+              <MapPin className="text-turmeric" size={20} />
               161 NJ-27, Edison, NJ 08820
             </p>
             <p className="flex items-center gap-3">
-              <Phone className="text-chilli" size={20} />
+              <Phone className="text-turmeric" size={20} />
               732 515-9466
             </p>
             <p className="flex items-center gap-3">
-              <Mail className="text-chilli" size={20} />
+              <Mail className="text-turmeric" size={20} />
               eightindianbistro@gmail.com
             </p>
           </div>
