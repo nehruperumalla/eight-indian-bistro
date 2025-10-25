@@ -59,7 +59,7 @@ export default function Contact() {
                   ["Monday", "11:30 AM - 3:00 PM and 5:30 PM - 09:30 PM"],
                   ["Tuesday", "Closed"],
                   ["Wednesday", "11:30 AM - 3:00 PM and 5:30 PM - 10:00 PM"],
-                  ["Thursday", "11:30 AM - 3:00 PM and 5:30 PM - 10:30 PM"],
+                  ["Thursday", "11:30 AM - 3:00 PM and 5:30 PM - 10:00 PM"],
                   ["Friday", "11:30 AM - 3:00 PM and 5:30 PM - 10:30 PM"],
                   ["Saturday", "11:30 AM - 3:00 PM and 5:30 PM - 10:30 PM"],
                   ["Sunday", "11:30 AM - 3:00 PM and 5:30 PM - 10:00 PM"]
