@@ -62,7 +62,7 @@ export default function Contact() {
                   ["Thursday", "11:30 AM - 3:00 PM and 5:00 PM - 09:30 PM"],
                   ["Friday", "11:30 AM - 3:00 PM and 5:00 PM - 10:30 PM"],
                   ["Saturday", "12:00 PM - 10:30 PM"],
-                  ["Sunday", "12:00 PM - 9:30 PM"]
+                  ["Sunday", "12:00 PM - 09:30 PM"]
                 ].map(([day, time], i) => (
                   <div key={i}
                         className="flex justify-between py-2 text-sm">
