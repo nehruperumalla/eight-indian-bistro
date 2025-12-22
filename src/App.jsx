@@ -6,9 +6,24 @@ import Gallery from "./components/Gallery";
 import Promise from "./components/Promise";
 import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import PromoModal from "./components/PromoModal";
+import { useEffect, useState } from "react";
+
 function App() {
+  const [promoOpen, setPromoOpen] = useState(false);
+
+  // Show every time user opens site (no localStorage)
+  useEffect(() => {
+    setPromoOpen(true);
+  }, []);
   return (
     <div className="bg-dark text-white font-primary">
+      <PromoModal
+        isOpen={promoOpen}
+        onClose={() => setPromoOpen(false)}
+        imageSrc="popup/promo.jpeg"   // put promo.jpg in /public
+        alt="Grand Opening Promo"
+      />
       <Navbar />
       <Hero />
       <About />
