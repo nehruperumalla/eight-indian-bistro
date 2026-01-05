@@ -18,12 +18,12 @@ function App() {
   }, []);
   return (
     <div className="bg-dark text-white font-primary">
-      <PromoModal
+      {/* <PromoModal
         isOpen={promoOpen}
         onClose={() => setPromoOpen(false)}
         imageSrc="popup/promo.jpeg"   // put promo.jpg in /public
         alt="Grand Opening Promo"
-      />
+      /> */}
       <Navbar />
       <Hero />
       <About />
