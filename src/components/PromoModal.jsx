@@ -50,7 +50,7 @@ export default function PromoModal({ isOpen, onClose, imageSrc, alt = "Promo" })
               {/* Close button */}
               <button
                 onClick={onClose}
-                className="absolute right-2 top-2 z-10 rounded-full bg-white/25 px-3 py-2 text-white hover:bg-white/35 focus:outline-none focus:ring-2 focus:ring-white/60"
+                className="absolute right-2 top-2 z-10 rounded-full bg-black/25 px-3 py-2 text-white hover:bg-black/35 focus:outline-none focus:ring-2 focus:ring-white/60"
                 aria-label="Close popup"
               >
                 ✕
