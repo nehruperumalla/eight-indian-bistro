@@ -23,7 +23,7 @@ export default function Hero() {
       static: true,
     },
     {
-      label: "Private Hall",
+      label: "Party Hall",
       icon: <Utensils size={26} />,
       color: "#FEEDC8",
       route: "/private-party",
