@@ -8,6 +8,25 @@ import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 import PromoModal from "./components/PromoModal";
 import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import PrivateParty from "./components/PrivateParty";
+import Catering from "./components/Catering";
+
+function HomePage() {
+  return (
+    <>
+      <Hero />
+      <About />
+      {/* <Menu /> */}
+      <Gallery />
+      {/* <Promise /> */}
+      <Contact />
+      <ScrollToTop />
+    </>
+  );
+}
+
+
 
 function App() {
   const [promoOpen, setPromoOpen] = useState(false);
@@ -25,13 +44,13 @@ function App() {
         alt="Platter"
       />
       <Navbar />
-      <Hero />
-      <About />
-      {/* <Menu /> */}
-      <Gallery />
-      {/* <Promise /> */}
-      <Contact />
-      <ScrollToTop />
+      
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/private-party" element={<PrivateParty />} />
+        <Route path="/catering" element={<Catering />} />
+      </Routes>
+      
     </div>
   );
 }
