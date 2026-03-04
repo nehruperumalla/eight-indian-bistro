@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import PrivateParty from "./components/PrivateParty";
 import Catering from "./components/Catering";
+import ScrollToTopRoute from "./components/ScrollToTopRoute";
 
 function HomePage() {
   return (
@@ -44,7 +45,7 @@ function App() {
         alt="Platter"
       />
       <Navbar />
-      
+      <ScrollToTopRoute />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/private-party" element={<PrivateParty />} />

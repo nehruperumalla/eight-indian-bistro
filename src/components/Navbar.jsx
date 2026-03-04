@@ -172,9 +172,7 @@ export default function Navbar() {
           >
             Order Now
           </a>
-
           
-
           {/* Routed pages */}
           <RouterLink
             to="/private-party"

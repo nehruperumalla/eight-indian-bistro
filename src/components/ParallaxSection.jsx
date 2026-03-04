@@ -8,18 +8,10 @@ export default function ParallaxSection({
   return (
     <section
       id={id}
-      className={`relative overflow-hidden ${className}`}
-      style={{
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed", // parallax-like effect on desktop
-      }}
+      className={`relative overflow-hidden bg-center bg-cover bg-no-repeat bg-scroll lg:bg-fixed ${className}`}
+      style={{ backgroundImage: `url(${bgImage})` }}
     >
-      {/* overlay */}
       <div className={`absolute inset-0 ${overlayClassName}`} />
-
-      {/* content */}
       <div className="relative z-10">{children}</div>
     </section>
   );
