@@ -178,7 +178,7 @@ export default function Navbar() {
           {/* Routed pages */}
           <RouterLink
             to="/private-party"
-            className="text-turmeric font-semibold hover:opacity-90"
+            className="text-turmeric hover:opacity-90"
             onClick={closeMobile}
           >
             Party Hall
@@ -186,7 +186,7 @@ export default function Navbar() {
 
           <RouterLink
             to="/catering"
-            className="text-turmeric font-semibold hover:opacity-90"
+            className="text-turmeric hover:opacity-90"
             onClick={closeMobile}
           >
             Catering
