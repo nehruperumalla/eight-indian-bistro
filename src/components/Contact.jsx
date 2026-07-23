@@ -56,13 +56,13 @@ export default function Contact() {
             </p>
               <div className="divide-y divide-white/10 border-t border-b border-white/10 max-w-sm md:max-w-md">
                 {[
-                  ["Monday", "11:30 AM - 3:00 PM and 5:00 PM - 09:30 PM"],
+                  ["Monday", "12:00 PM - 10:00 PM"],
                   ["Tuesday", "Closed"],
-                  ["Wednesday", "11:30 AM - 3:00 PM and 5:00 PM - 09:30 PM"],
-                  ["Thursday", "11:30 AM - 3:00 PM and 5:00 PM - 09:30 PM"],
-                  ["Friday", "11:30 AM - 3:00 PM and 5:00 PM - 10:30 PM"],
+                  ["Wednesday", "12:00 PM - 10:00 PM"],
+                  ["Thursday", "12:00 PM - 10:00 PM"],
+                  ["Friday", "12:00 PM - 10:30 PM"],
                   ["Saturday", "12:00 PM - 10:30 PM"],
-                  ["Sunday", "12:00 PM - 09:30 PM"]
+                  ["Sunday", "12:00 PM - 10:00 PM"]
                 ].map(([day, time], i) => (
                   <div key={i}
                         className="flex justify-between py-2 text-sm">
