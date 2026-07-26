@@ -40,14 +40,20 @@ export default function Contact() {
               <MapPin className="text-turmeric" size={20} />
               161 NJ-27, Edison, NJ 08820
             </p>
-            <p className="flex items-center gap-3">
+            <a
+              href="tel:+17325159466"
+              className="flex items-center gap-3 hover:text-turmeric transition-colors"
+            >
               <Phone className="text-turmeric" size={20} />
-              732 515-9466
-            </p>
-            <p className="flex items-center gap-3">
+              <span>732 515-9466</span>
+            </a>
+                        <a
+              href="mailto:eightindianbistro@gmail.com"
+              className="flex items-center gap-3 hover:text-turmeric transition-colors"
+            >
               <Mail className="text-turmeric" size={20} />
-              eightindianbistro@gmail.com
-            </p>
+              <span>eightindianbistro@gmail.com</span>
+            </a>
           </div>
 
           <div className="mt-6">

@@ -1,5 +1,11 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { CreditCard, BottleWine, Utensils, HandPlatter } from "lucide-react";
+import {
+  CreditCard,
+  BottleWine,
+  Utensils,
+  HandPlatter,
+  Phone,
+} from "lucide-react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -34,6 +40,13 @@ export default function Hero() {
       color: "#FEEDC8",
       route: "/catering",
     },
+    {
+      label: "Call Now",
+      icon: <Phone size={26} />,
+      color: "#FEEDC8",
+      link: "tel:+17325159466", // Replace with your restaurant number
+      phone: true,
+    },
   ];
 
   return (
@@ -53,7 +66,7 @@ export default function Hero() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/70" />
 
-      {/* Text */}
+      {/* Content */}
       <motion.div
         className="relative z-10 px-4"
         initial={{ opacity: 0, y: 30 }}
@@ -70,12 +83,14 @@ export default function Hero() {
 
         {/* Action Cards */}
         <motion.div
-          className="mt-14 grid grid-cols-2 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-gray-300"
+          className="mt-14 grid grid-cols-2 gap-6 max-w-4xl mx-auto text-gray-300"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 1 }}
         >
           {items.map((item, i) => {
+            const isLast = i === items.length - 1;
+
             const card = (
               <motion.div
                 whileHover={{
@@ -84,17 +99,28 @@ export default function Hero() {
                   textShadow: `0px 0px 10px ${item.color}`,
                   boxShadow: `0px 0px 12px ${item.color}55`,
                 }}
-                transition={{ type: "spring", stiffness: 220, damping: 12 }}
-                className="flex flex-col items-center justify-center bg-black/60 rounded-xl py-4 shadow-md border border-gray-700 hover:border-turmeric transition-all"
+                transition={{
+                  type: "spring",
+                  stiffness: 220,
+                  damping: 12,
+                }}
+                className={`flex flex-col items-center justify-center bg-black/60 rounded-xl py-4 shadow-md border border-gray-700 hover:border-turmeric transition-all ${
+                  isLast
+                    ? "w-full max-w-[220px]"
+                    : ""
+                }`}
               >
-                <div className="mb-2 text-xl text-turmeric">{item.icon}</div>
+                <div className="mb-2 text-xl text-turmeric">
+                  {item.icon}
+                </div>
+
                 <span className="text-sm md:text-base font-medium tracking-wide">
                   {item.label}
                 </span>
               </motion.div>
             );
 
-            // External Link (new tab)
+            // External link
             if (item.external) {
               return (
                 <a
@@ -102,25 +128,45 @@ export default function Hero() {
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block"
+                  className={isLast ? "col-span-2 flex justify-center" : "block"}
                 >
                   {card}
                 </a>
               );
             }
 
-            // Internal Route (no refresh)
+            // Phone link
+            if (item.phone) {
+              return (
+                <a
+                  key={i}
+                  href={item.link}
+                  className={isLast ? "col-span-2 flex justify-center" : "block"}
+                >
+                  {card}
+                </a>
+              );
+            }
+
+            // Internal route
             if (item.route) {
               return (
-                <Link key={i} to={item.route} className="block">
+                <Link
+                  key={i}
+                  to={item.route}
+                  className={isLast ? "col-span-2 flex justify-center" : "block"}
+                >
                   {card}
                 </Link>
               );
             }
 
-            // Static (no link)
+            // Static card
             return (
-              <div key={i} className="block">
+              <div
+                key={i}
+                className={isLast ? "col-span-2 flex justify-center" : "block"}
+              >
                 {card}
               </div>
             );
