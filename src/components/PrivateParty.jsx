@@ -37,20 +37,43 @@ export default function PrivateParty() {
               href="tel:+17325159466"
               className="rounded-xl bg-turmeric px-5 py-3 font-semibold text-black hover:opacity-90"
             >
-              Call to Book
+              Call to Book: 732 515-9466
             </a>
-            <button
-              onClick={scrollToEventForm}
-              className="rounded-xl border border-white/20 px-5 py-3 font-semibold text-white hover:bg-white/10"
-            >
-              Plan Your Event
-            </button>
           </div>
         </div>
       </ParallaxSection>
 
-      {/* WHY HOST WITH US */}
+      {/* CTA */}
       <section style={{ backgroundColor: '#5F4A2F'}} className=" py-14">
+      
+          <div className="mx-auto max-w-6xl px-6 text-center">
+            <h2 className="font-primary text-2xl sm:text-3xl md:text-5xl font-bold text-turmeric">
+              Ready to plan your event?
+            </h2>
+            <p className="mt-3 text-gray-200 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+              Tell us your date, guest count, and vibe. We’ll take care of the details—from setup to service.
+            </p>
+
+            <InquiryForm subject="Private Party"/>
+
+            {/* <div className="mt-8 flex flex-wrap justify-center gap-3">
+              <a
+                href="tel:+17325159466"
+                className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white hover:bg-white/10"
+              >
+                Call Now
+              </a>
+            </div> */}
+          </div>        
+      </section>
+
+      {/* WHY HOST WITH US */}
+      <ParallaxSection
+        id="event-form"
+        bgImage="/images/gallery/4.jpg"
+        overlayClassName="bg-black/70"
+        className="py-16"
+      >
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl font-bold text-turmeric">
             Make your celebration effortless
@@ -76,14 +99,10 @@ export default function PrivateParty() {
             ))}
           </div>
         </div>
-      </section>
+      </ParallaxSection>
 
       {/* EVENT TYPES (content inspiration) */}
-      <ParallaxSection
-        bgImage="/images/gallery/1.jpg"
-        overlayClassName="bg-black/70"
-        className="py-14"
-      >
+      <section style={{ backgroundColor: '#5F4A2F'}} className=" py-14">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl font-bold text-turmeric">
             Perfect for every occasion
@@ -108,10 +127,15 @@ export default function PrivateParty() {
             ))}
           </div>
         </div>
-      </ParallaxSection>
+      </section>
 
       {/* HOW IT WORKS */}
-      <section style={{ backgroundColor: '#5F4A2F'}} className=" py-14">
+      <ParallaxSection
+        bgImage="/images/gallery/1.jpg"
+        overlayClassName="bg-black/70"
+        className="py-14"
+      >
+      
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl font-bold text-turmeric">
             Simple booking process
@@ -132,14 +156,11 @@ export default function PrivateParty() {
             ))}
           </div>
         </div>
-      </section>
+      </ParallaxSection>
 
       {/* FOOD STRIP */}
-      <ParallaxSection
-        bgImage="/images/gallery/3.jpg"
-        overlayClassName="bg-black/65"
-        className="py-14"
-      >
+      <section style={{ backgroundColor: '#5F4A2F'}} className=" py-14">
+      
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl font-bold text-turmeric">
             A menu built for groups
@@ -159,10 +180,14 @@ export default function PrivateParty() {
             </a>
           </div>
         </div>
-      </ParallaxSection>
+      </section>
 
       {/* FAQ */}
-      <section style={{ backgroundColor: '#5F4A2F'}} className=" py-14">
+      <ParallaxSection
+        bgImage="/images/gallery/3.jpg"
+        overlayClassName="bg-black/65"
+        className="py-14"
+      >
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl font-bold text-turmeric">
             FAQs
@@ -182,35 +207,9 @@ export default function PrivateParty() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* CTA */}
-      <ParallaxSection
-        id="event-form"
-        bgImage="/images/gallery/4.jpg"
-        overlayClassName="bg-black/70"
-        className="py-16"
-      >
-          <div className="mx-auto max-w-6xl px-6 text-center">
-            <h2 className="font-primary text-2xl sm:text-3xl md:text-5xl font-bold text-turmeric">
-              Ready to plan your event?
-            </h2>
-            <p className="mt-3 text-gray-200 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-              Tell us your date, guest count, and vibe. We’ll take care of the details—from setup to service.
-            </p>
-
-            <InquiryForm subject="Private Party"/>
-
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <a
-                href="tel:+17325159466"
-                className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white hover:bg-white/10"
-              >
-                Call Now
-              </a>
-            </div>
-          </div>        
       </ParallaxSection>
+
+      
       <Contact />
     </main>
   );

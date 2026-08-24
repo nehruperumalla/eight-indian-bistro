@@ -39,18 +39,48 @@ export default function Catering() {
             >
               View Tray Order Menu (PDF)
             </a>
-            <button
-              onClick={scrollToEventForm}
+
+            <a
+              href="tel:+17325159466"
               className="rounded-xl bg-turmeric px-5 py-3 font-semibold text-black hover:opacity-90"
             >
-              Request Catering
-            </button>
+              Call to Book: 732 515-9466
+            </a>
           </div>
+
         </div>
       </ParallaxSection>
 
-      {/* STATIONS (inspiration) */}
+      {/* CTA */}
       <section style={{ backgroundColor: '#5F4A2F'}} className=" py-14">
+        <div className="mx-auto max-w-6xl px-6 text-center">
+          <h2 className="font-primary text-2xl sm:text-3xl md:text-5xl font-bold text-turmeric">
+            Send your catering request
+          </h2>
+          <p className="mt-3 text-gray-200 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+            Email us your date, guest count, dietary preferences, and delivery/pickup needs.
+          </p>
+
+          <InquiryForm subject="Catering"/>
+
+          {/* <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <a
+              href="tel:+17325159466"
+              className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white hover:bg-white/10"
+            >
+              Call
+            </a>
+          </div> */}
+        </div>
+      </section>
+
+      {/* STATIONS (inspiration) */}
+      <ParallaxSection
+        id="catering-event-form"
+        bgImage="/images/gallery/3.jpg"
+        overlayClassName="bg-black/70"
+        className="py-16"
+      >
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="font-primary text-2xl sm:text-3xl md:text-4xl font-bold text-turmeric">
             Catering stations & packages
@@ -75,7 +105,7 @@ export default function Catering() {
             ))}
           </div>
         </div>
-      </section>
+      </ParallaxSection>
 
       {/* EVENT TYPES (inspiration list) */}
       <ParallaxSection
@@ -135,33 +165,6 @@ export default function Catering() {
         </div>
       </section>
 
-      {/* CTA */}
-      <ParallaxSection
-        id="catering-event-form"
-        bgImage="/images/gallery/3.jpg"
-        overlayClassName="bg-black/70"
-        className="py-16"
-      >
-        <div className="mx-auto max-w-6xl px-6 text-center">
-          <h2 className="font-primary text-2xl sm:text-3xl md:text-5xl font-bold text-turmeric">
-            Send your catering request
-          </h2>
-          <p className="mt-3 text-gray-200 text-sm sm:text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
-            Email us your date, guest count, dietary preferences, and delivery/pickup needs.
-          </p>
-
-          <InquiryForm subject="Catering"/>
-
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <a
-              href="tel:+17325159466"
-              className="rounded-xl border border-white/20 px-6 py-3 font-semibold text-white hover:bg-white/10"
-            >
-              Call
-            </a>
-          </div>
-        </div>
-      </ParallaxSection>
       <Contact />
     </main>
   );

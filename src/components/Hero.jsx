@@ -41,7 +41,7 @@ export default function Hero() {
       route: "/catering",
     },
     {
-      label: "Call Now",
+      label: "Call Now: 732 515-9466",
       icon: <Phone size={26} />,
       color: "#FEEDC8",
       link: "tel:+17325159466", // Replace with your restaurant number
