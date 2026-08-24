@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function PromoModal({
   isOpen,
   onClose,
-  images = ["/popup/PLATTER.jpg"],
+  images = ["/popup/Onam.jpeg", "/popup/PLATTER.jpg"],
   altPrefix = "Promo",
 }) {
   const safeImages = useMemo(
