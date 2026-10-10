@@ -6,12 +6,13 @@ import Gallery from "./components/Gallery";
 import Promise from "./components/Promise";
 import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop";
-import PromoModal from "./components/PromoModal";
+// import PromoModal from "./components/PromoModal";
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import PrivateParty from "./components/PrivateParty";
 import Catering from "./components/Catering";
 import ScrollToTopRoute from "./components/ScrollToTopRoute";
+import ThankYou from "./components/ThankYou";
 
 function HomePage() {
   return (
@@ -38,18 +39,19 @@ function App() {
   }, []);
   return (
     <div className="bg-dark text-white font-primary">
-      <PromoModal
+      {/* <PromoModal
         isOpen={promoOpen}
         onClose={() => setPromoOpen(false)}
         imageSrc="popup/PLATTER.jpg"   // put promo.jpg in /public
         alt="Platter"
-      />
+      /> */}
       <Navbar />
       <ScrollToTopRoute />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/private-party" element={<PrivateParty />} />
         <Route path="/catering" element={<Catering />} />
+        <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
       
     </div>
